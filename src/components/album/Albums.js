@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Navbar from "../layout/Navbar";
-import UsersFeed from "./UsersFeed";
+import AlbumsUserFeed from "./AlbumsUserFeed";
 import Spinner from "../common/Spinner";
 
-class Album extends Component {
+class Albums extends Component {
   constructor(props) {
     super(props);
 
@@ -34,7 +34,7 @@ class Album extends Component {
         </div>
       );
     } else {
-      albumContent = <UsersFeed users={users} isLoading={isLoading} />;
+      albumContent = <AlbumsUserFeed users={users} />;
     }
 
     return (
@@ -48,4 +48,4 @@ class Album extends Component {
   }
 }
 
-export default Album;
+export default Albums;

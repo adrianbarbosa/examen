@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import UsersItem from "./UsersItem";
+import AlbumsUserItem from "./AlbumsUserItem";
 
-class UsersFeed extends Component {
+class AlbumsUsersFeed extends Component {
   render() {
     const { users } = this.props;
     return users.map(user => (
-      <UsersItem
+      <AlbumsUserItem
         key={user.id}
         id={user.id}
         name={user.name}
@@ -17,4 +17,4 @@ class UsersFeed extends Component {
   }
 }
 
-export default UsersFeed;
+export default AlbumsUsersFeed;

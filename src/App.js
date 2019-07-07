@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/layout/Login";
 import Home from "./components/home/Home";
-import Album from "./components/album/Album";
-// import Footer from "./components/layout/Footer";
+import Albums from "./components/album/Albums";
+import AlbumsByUser from "./components/album/AlbumsByUser";
 import "./App.css";
 
 class App extends Component {
@@ -14,7 +14,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Login} />
             <Route exact path="/home" component={Home} />
-            <Route exact path="/album" component={Album} />
+            <Route exact path="/albums" component={Albums} />
+            <Route exact path="/albums/:id" component={AlbumsByUser} />
           </Switch>
           {/* <Footer /> */}
         </div>
