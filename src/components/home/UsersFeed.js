@@ -7,6 +7,7 @@ class UsersFeed extends Component {
     return users.map(user => (
       <UsersItem
         key={user.id}
+        id={user.id}
         avatar={user.avatar}
         email={user.email}
         first={user.first_name}

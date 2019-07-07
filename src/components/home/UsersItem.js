@@ -3,7 +3,7 @@ import Modal from "./Modal";
 
 class UsersItem extends Component {
   render() {
-    const { avatar, email, first, last } = this.props;
+    const { id, avatar, email, first, last } = this.props;
 
     return (
       <div className="card col-md-3 mr-5">
@@ -19,7 +19,7 @@ class UsersItem extends Component {
           <p className="card-text">{email}</p>
           <button
             type="button"
-            class="btn btn-primary"
+            className="btn btn-primary"
             data-toggle="modal"
             data-target="#exampleModal"
           >
