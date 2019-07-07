@@ -28,7 +28,11 @@ class Home extends Component {
 
     let homeContent;
     if (users === null || isLoading || Object.keys(users).length === 0) {
-      homeContent = <Spinner />;
+      homeContent = (
+        <div className="col-12 mt-5">
+          <Spinner />
+        </div>
+      );
     } else {
       homeContent = <UsersFeed users={users} isLoading={isLoading} />;
     }
@@ -36,7 +40,9 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        {homeContent}
+        <div className="container mt-5">
+          <div className="row">{homeContent}</div>
+        </div>
       </React.Fragment>
     );
   }
