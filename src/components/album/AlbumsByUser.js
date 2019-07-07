@@ -41,7 +41,9 @@ class AlbumsByUser extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        {albumsContent}
+        <div className="container">
+          <div className="row">{albumsContent}</div>
+        </div>
       </React.Fragment>
     );
   }

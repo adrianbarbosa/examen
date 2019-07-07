@@ -4,6 +4,7 @@ import Login from "./components/layout/Login";
 import Home from "./components/home/Home";
 import Albums from "./components/album/Albums";
 import AlbumsByUser from "./components/album/AlbumsByUser";
+import Photos from "./components/photos/Photos";
 import "./App.css";
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/albums" component={Albums} />
             <Route exact path="/albums/:id" component={AlbumsByUser} />
+            <Route exact path="/photos/:id" component={Photos} />
           </Switch>
           {/* <Footer /> */}
         </div>
