@@ -23,6 +23,26 @@
   color: #61dafb;
 }
 
+html body .app.flex-row.align-items-center {
+  height: 100vh;
+}
+
+.app,
+app-dashboard,
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
