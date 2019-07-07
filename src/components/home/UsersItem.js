@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Modal from "./Modal";
 
 class UsersItem extends Component {
   render() {
@@ -16,9 +17,15 @@ class UsersItem extends Component {
             {first} {last}
           </h5>
           <p className="card-text">{email}</p>
-          <a href="/" className="btn btn-primary">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
             View more
-          </a>
+          </button>
+          <Modal user={this.props} />
         </div>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../layout/Navbar";
-import Spinner from "../common/Spinner";
 import UsersFeed from "./UsersFeed";
+import Spinner from "../common/Spinner";
 
 class Home extends Component {
   constructor(props) {
