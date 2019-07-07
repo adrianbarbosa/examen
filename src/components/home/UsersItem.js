@@ -5,7 +5,7 @@ class UsersItem extends Component {
     const { avatar, email, first, last } = this.props;
 
     return (
-      <div className="card col-3 mr-5">
+      <div className="card col-md-3 mr-5">
         <img
           src={avatar}
           className="card-img-top img-fluid img-rounded p-3"

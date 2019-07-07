@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 class AlbumsByUserItem extends Component {
   render() {
-    const { id, title, user } = this.props;
+    const { id, title } = this.props;
     return (
-      <div className="card col-3 mb-3">
+      <div className="card col-md-3 mb-3">
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
 

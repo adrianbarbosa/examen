@@ -4,7 +4,7 @@ class PhotosItem extends Component {
   render() {
     const { title, url } = this.props;
     return (
-      <div className="col-2">
+      <div className="col-md-2">
         {title}
         <picture>
           <img src={url} alt={title} width="100%" />
